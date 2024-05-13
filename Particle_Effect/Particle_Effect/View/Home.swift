@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Home: View {
+    //can use a bool array to use more than one button
     @State private var isLiked : Bool = false
     var body: some View {
         VStack{
