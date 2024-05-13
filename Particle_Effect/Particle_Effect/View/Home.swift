@@ -25,6 +25,7 @@ struct Home: View {
         Button(action: onTap){
             Image(systemName: systemImage)
                 .font(.title2)
+                .particleEffect(systemImage: systemImage, font: .title2, status: status, activeTint: activeTint, inActiveTint: inActiveTint)
                 .foregroundColor(status ? activeTint : inActiveTint)
                 .padding(.horizontal,18)
                 .padding(.vertical,8)
